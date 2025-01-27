@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  botpress:
+    image: freires/botpress-server:latest-version-as-of-01.26.2025
+    ports:
+      - "3000:3000"  # Expondo a porta 3000
+    volumes:
+      - ./data:/botpress/data  # Volume para persistir os dados do Botpress no repositório
+      - .:/app  # Mapeia o repositório local para dentro do container (se necessário)
+    environment:
+      - BP_HOST=0.0.0.0  # Configura o Botpress para ouvir em todas as interfaces
+    restart: unless-stopped  # Garante que o container será reiniciado automaticamente, a menos que seja parado manualmente

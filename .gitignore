@@ -1,0 +1,18 @@
+# Ignorar arquivos do Docker
+.docker/
+docker-compose.override.yml
+
+# Ignorar diretórios de logs ou dados do Botpress
+data/
+
+# Ignorar arquivos do editor (Visual Studio Code)
+.vscode/
+
+# Ignorar arquivos temporários do Git
+*.log
+*.swp
+*.bak
+
+# Ignorar arquivos específicos do sistema operacional
+Thumbs.db
+Desktop.ini
