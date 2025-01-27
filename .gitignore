@@ -2,8 +2,6 @@
 .docker/
 docker-compose.override.yml
 
-# Ignorar diretórios de logs ou dados do Botpress
-data/
 
 # Ignorar arquivos do editor (Visual Studio Code)
 .vscode/
